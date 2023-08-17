@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		48B57C682A8E0151003643CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C672A8E0151003643CE /* AppDelegate.swift */; };
 		48B57C6A2A8E0151003643CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C692A8E0151003643CE /* SceneDelegate.swift */; };
-		48B57C6C2A8E0151003643CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C6B2A8E0151003643CE /* ViewController.swift */; };
 		48B57C6F2A8E0151003643CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B57C6D2A8E0151003643CE /* Main.storyboard */; };
 		48B57C712A8E0156003643CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B57C702A8E0156003643CE /* Assets.xcassets */; };
 		48B57C742A8E0156003643CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B57C722A8E0156003643CE /* LaunchScreen.storyboard */; };
+		48B57C7D2A8E017A003643CE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 48B57C7C2A8E017A003643CE /* Alamofire */; };
+		48B57C802A8E018F003643CE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 48B57C7F2A8E018F003643CE /* Kingfisher */; };
+		48B57C822A8E0211003643CE /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C812A8E0211003643CE /* VideoViewController.swift */; };
+		48B57C852A8E027F003643CE /* KakaoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C842A8E027F003643CE /* KakaoAPIManager.swift */; };
+		48B57C872A8E02D4003643CE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48B57C862A8E02D4003643CE /* .gitignore */; };
+		48B57C892A8E02EA003643CE /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C882A8E02EA003643CE /* APIKey.swift */; };
+		48B57C8B2A8E052A003643CE /* VideoClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C8A2A8E052A003643CE /* VideoClip.swift */; };
+		48B57C8D2A8E0A7D003643CE /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B57C8C2A8E0A7D003643CE /* VideoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48B57C642A8E0151003643CE /* Video Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Video Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B57C672A8E0151003643CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B57C692A8E0151003643CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48B57C6B2A8E0151003643CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48B57C6E2A8E0151003643CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B57C702A8E0156003643CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B57C732A8E0156003643CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B57C752A8E0156003643CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B57C812A8E0211003643CE /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		48B57C842A8E027F003643CE /* KakaoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPIManager.swift; sourceTree = "<group>"; };
+		48B57C862A8E02D4003643CE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = Video/.gitignore; sourceTree = "<group>"; };
+		48B57C882A8E02EA003643CE /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		48B57C8A2A8E052A003643CE /* VideoClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClip.swift; sourceTree = "<group>"; };
+		48B57C8C2A8E0A7D003643CE /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B57C802A8E018F003643CE /* Kingfisher in Frameworks */,
+				48B57C7D2A8E017A003643CE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +70,28 @@
 		48B57C662A8E0151003643CE /* Video Project */ = {
 			isa = PBXGroup;
 			children = (
+				48B57C862A8E02D4003643CE /* .gitignore */,
+				48B57C832A8E0243003643CE /* Video */,
 				48B57C672A8E0151003643CE /* AppDelegate.swift */,
 				48B57C692A8E0151003643CE /* SceneDelegate.swift */,
-				48B57C6B2A8E0151003643CE /* ViewController.swift */,
 				48B57C6D2A8E0151003643CE /* Main.storyboard */,
 				48B57C702A8E0156003643CE /* Assets.xcassets */,
 				48B57C722A8E0156003643CE /* LaunchScreen.storyboard */,
 				48B57C752A8E0156003643CE /* Info.plist */,
+				48B57C882A8E02EA003643CE /* APIKey.swift */,
 			);
 			path = "Video Project";
+			sourceTree = "<group>";
+		};
+		48B57C832A8E0243003643CE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				48B57C812A8E0211003643CE /* VideoViewController.swift */,
+				48B57C8C2A8E0A7D003643CE /* VideoTableViewCell.swift */,
+				48B57C842A8E027F003643CE /* KakaoAPIManager.swift */,
+				48B57C8A2A8E052A003643CE /* VideoClip.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,10 @@
 			dependencies = (
 			);
 			name = "Video Project";
+			packageProductDependencies = (
+				48B57C7C2A8E017A003643CE /* Alamofire */,
+				48B57C7F2A8E018F003643CE /* Kingfisher */,
+			);
 			productName = "Video Project";
 			productReference = 48B57C642A8E0151003643CE /* Video Project.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,10 @@
 				Base,
 			);
 			mainGroup = 48B57C5B2A8E0151003643CE;
+			packageReferences = (
+				48B57C7B2A8E017A003643CE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				48B57C7E2A8E018F003643CE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 48B57C652A8E0151003643CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B57C872A8E02D4003643CE /* .gitignore in Resources */,
 				48B57C742A8E0156003643CE /* LaunchScreen.storyboard in Resources */,
 				48B57C712A8E0156003643CE /* Assets.xcassets in Resources */,
 				48B57C6F2A8E0151003643CE /* Main.storyboard in Resources */,
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B57C6C2A8E0151003643CE /* ViewController.swift in Sources */,
+				48B57C852A8E027F003643CE /* KakaoAPIManager.swift in Sources */,
+				48B57C8B2A8E052A003643CE /* VideoClip.swift in Sources */,
+				48B57C8D2A8E0A7D003643CE /* VideoTableViewCell.swift in Sources */,
 				48B57C682A8E0151003643CE /* AppDelegate.swift in Sources */,
 				48B57C6A2A8E0151003643CE /* SceneDelegate.swift in Sources */,
+				48B57C822A8E0211003643CE /* VideoViewController.swift in Sources */,
+				48B57C892A8E02EA003643CE /* APIKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +398,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48B57C7B2A8E017A003643CE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		48B57C7E2A8E018F003643CE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48B57C7C2A8E017A003643CE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48B57C7B2A8E017A003643CE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		48B57C7F2A8E018F003643CE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48B57C7E2A8E018F003643CE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48B57C5C2A8E0151003643CE /* Project object */;
 }
